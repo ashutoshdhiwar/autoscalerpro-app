@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: autoscalerpro-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: autoscalerpro
+  ports:
+    - port: 5000
+      targetPort: 5000
