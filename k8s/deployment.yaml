@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: autoscalerpro
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: autoscalerpro
+  template:
+    metadata:
+      labels:
+        app: autoscalerpro
+    spec:
+      containers:
+      - name: autoscalerpro
+        image: harshnilve28/autoscalerpro:latest
+        ports:
+        - containerPort: 5000
