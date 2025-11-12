@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/<person1-username>/<repo-name>.git'
+                git branch: 'main', url: 'https://github.com/ashutoshdhiwar/autoscalerpro-app.git'
             }
         }
 
